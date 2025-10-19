@@ -48,7 +48,7 @@ if not kenya.empty:
     kenya_pred_2030 = model.predict([[kenya_gdp_2030]])[0]
     kenya_gap = 100 - kenya_pred_2030
     print(f"\n🇰🇪 KENYA 2030 PREDICTION:")
-    print(f"2022: {kenya_internet:.0f}% coverage, GDP ${kenya_gdp:,.0f}")
+    print(f"2024: {kenya_internet:.0f}% coverage, GDP ${kenya_gdp:,.0f}")
     print(f"2030: {kenya_pred_2030:.0f}% coverage, GDP ${kenya_gdp_2030:,.0f}")
     print(f"NEEDS: {kenya_gap:.0f}% more = {int(kenya_gap * 55000000 / 100):,} PEOPLE!")
 else:
